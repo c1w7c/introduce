@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p{
+    color: red;
+}
+.text{
+    display: none;
+}
+
+
+.text2{
+    display: none;
+}
+
+
+/* 同時包含 */
+.text2.active{  
+    display: block;
+}
+
+.outter{
+    height: 300px;
+    width: 500px;
+    border: 1px solid blue;
+    background-image: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png');
+    position: relative;
+    overflow: hidden; 
+}
+.outter:hover .inner{
+    bottom:0px;
+    background-color: aqua;
+}
+
+.inner{
+    
+    transition: background-color 1s,bottom 1s;
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+    background-color: yellow;
+    padding-top:20px;
+    padding-bottom:20px;
+    position: absolute;
+    bottom:-60px;
+}
+
+.menu{
+    background:pink;
+    height: 50px;
+    width: 500px;
+}
+a{
+    display: block;
+    padding-top: 5px;
+    padding-bottom:5px;
+    text-decoration: none;
+    background: white;
+    margin-right: 10px;
+    border:2px solid black;
+    transition: background-color .5s ;
+    text-align: center;
+}
+a:hover,.dropdown.active{
+    background-color: aquamarine;
+}
+
+.menu > ul{
+    float:right;
+}
+.menu > ul > li{
+    float:left;
+}
+
+.dropdown-list{
+    display: none;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+}
+/* .menu >ul >li:hover ul{
+    display: block;
+} */
+/* .dropdown:hover  .dropdown-list{
+    /* opacity: 1; */
+    /* visibility: visible; */
+    /* display: block;
+} */ 
+.box1,.box2,.box3{
+    width:100px;
+    height: 100px;
+    display: none;
+}
+.box1{
+    background: black;
+}
+.box2{
+    background:orange;
+}
+.box3{
+    background:red;
+}
+

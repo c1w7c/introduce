@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* *{
+    outline: 1px solid black;
+} */
+
+.header{
+    position: relative;
+}
+.header-banner{
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.adswall{
+    z-index: 9;
+    position: absolute;
+    background:white;
+    padding:50px;
+    width:100%;
+    opacity: 0.5;
+    top:50%;
+    left:0;
+}
+.slang{
+    z-index: 10;
+    position: absolute;
+    font-weight: bolder;
+    font-size:40px;
+    top:55%;
+    left:0;
+    font-family:fantasy;
+}
+
+
+.socialmedia{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.socialmedia p{
+    height: 22px;
+    width: 5px;
+    border-right:1px solid rgb(179, 178, 178);
+}
+.socialmedia a{
+    text-decoration: none;
+    margin: auto 5px;
+    color: black;
+    font-size: 24px;
+}
+.socialmedia a:hover{
+    font-weight: bolder;
+    border-bottom:2px solid gold;
+}
+.socialmedia li:first-child a::before{
+    margin: 5px;
+    color:rgb(63, 63, 235);
+}
+
+.socialmedia li:last-child a::before{
+    margin: 5px;
+    color:rgb(63, 193, 253);
+}
+
+
+.logo-contact{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    /* align-items:center; */
+    
+}
+.contact li{
+    width: 100px;
+    text-align: center;
+}
+
+.contact a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    transition: background-color .5s;
+    /* background: burlywood; */
+}
+.contact a:hover{
+    /* color:gold; */
+    background-color: rgb(231, 203, 133);
+    border-bottom: 2px solid green;
+    font-weight: bolder;
+
+}
+
+.contact-college ul{
+    display: none;
+    /* transition:  1s; */
+}
+.contact-aboutme ul{
+    display: none;
+}
+.contact-college ul a,
+.contact-aboutme ul a
+{
+    transition:  all .5s;
+}
+.contact-college ul a:hover,
+.contact-aboutme ul a:hover
+{
+    font-weight: bolder;
+    background: gold;
+    color:green;
+    border:darkred 2px solid;
+}
+
+
+
+.logo-contact > a,.footer-logo > a{
+    display: flex;
+}
+.logo-contact img,.footer-logo img{
+    width: 120px !important;
+    height: 45px !important;
+}
+.logo-contact > a::before,.footer-logo > a::before{
+    display: block;
+    margin: 3px;
+    font-size: 40px;
+    color: gold;
+    text-align: center;
+}
+
+
+.swiper-container{
+    width: auto;
+    height: 450px;
+}
+.swiper-slide{
+    text-align: center;
+}
+.swiper-slide img{
+    width: 100%;
+
+}
+.content{
+    margin-top: 10px;
+}
+.content-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.skill-list{
+    padding:5px;
+    margin:5px;
+    border:1px solid black;
+    box-shadow: 3px 3px 3px gray;
+}
+.content-list img{
+    max-width: 100%;
+    max-height:100%;
+}
+.skill-list h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.content > h1{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    color:darkblue;
+}
+
+table{
+    margin: 30px auto;
+    font-size:25px;
+    box-shadow: 3px 3px 3px gray;
+}
+td{
+    transition: font-size .8s;
+    padding:10px 15px;
+}
+td:hover{
+    font-size: 30px;
+    color:darkred;
+    cursor:zoom-in;
+}
+table tr:nth-child(2n){
+    background: rgb(233, 233, 153);
+}
+td:nth-child(1){
+    font-weight: bolder;
+}
+
+
+.register-background{
+    /* text-align: center; */
+    width: auto;
+    position: relative;
+    padding:30px;
+}
+
+.register-background::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: url("../images/logore.png");
+    opacity: 0.15;
+    z-index: -1;
+
+}
+.register-background h1,h2{
+    color: darkgreen;
+    font-size:30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.custom-data{
+    display: flex;
+    justify-content: space-around;
+}
+
+.customer{
+    display: flex;
+    flex-direction: column;
+}
+#name,#tel,#email{
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+    transition: all .5s;
+}
+#name:focus,#tel:focus,#email:focus{
+    background-color: gold;
+    border:darkgreen 3px solid;
+}
+
+.customer label{
+    font-weight: bolder;
+    color:darkgreen;
+    font-size: 25px;
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+}
+.parent-button{
+    display: flex;
+    justify-content: flex-end;
+}
+#button{
+    width: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:white;
+    background: darkgreen;
+    transition: background-color 0.5s;
+    
+}
+#button:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    color: darkgreen;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.footer-contact p span{
+    color:darkred;
+    font-weight: bolder;
+}
+
+
+
